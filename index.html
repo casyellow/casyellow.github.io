@@ -1,0 +1,340 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style/output.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!--<script src="jquery-3.7.1.min.js"></script>-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&display=swap" rel="stylesheet">
+    <style>
+        [x-cloak] { display: none !important; }
+
+        body {
+            font-family: "M PLUS Code Latin", monospace;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings: "wdth" 100;
+        }
+    </style>
+</head>
+<body>
+    <!--Navigation Bar-->
+    <nav class="flex justify-center">
+        <ol class="inline-flex items-center space-x-1 md:space-x-3">
+          <li class="inline-flex items-center">
+            <a href="#" class="ml-1 inline-flex text-sm font-medium text-violet-950 hover:text-purple-300 dark:text-purple-300 dark:hover:text-violet-950 hover:underline md:ml-2">
+              GABRIEL CASTELO
+            </a>
+          </li>
+          <li>
+            <div class="flex items-center">
+              <span class="mx-2.5 text-gray-800 ">/</span>
+              <a href="./docs/Gabriel Castelo English CV.pdf" target="_blank" rel="noopener noreferrer" class="ml-1 text-sm font-medium text-gray-800 hover:underline md:ml-2">
+                Resume
+              </a>
+            </div>
+          </li>
+          <li aria-current="page">
+            <div class="flex items-center">
+              <span class="mx-2.5 text-gray-800 ">/</span>
+              <span class="ml-1 text-sm font-medium text-gray-800 hover:underline md:ml-2">
+                <a href="https://github.com/casyellow/" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </span>
+            </div>
+          </li>
+        </ol>
+      </nav>
+
+    <!--Container for content-->
+    <div class="container shadow-lg mx-auto bg-white mt-2 md:mt-18"></div>
+
+    <!--"What I do" section-->
+    <div class="p-5 pt-8 border ignore border-gray-200 not-prose dark:border-gray-800 relative bg-gray-50 dark:bg-gray-800">
+        <div
+            class="absolute w-auto rounded-b-lg border-b uppercase -translate-y-px tracking-wide leading-none border-l border-r border-gray-200 dark:border-gray-800 shadow-sm top-0 left-1/2 -translate-x-1/2 px-3 pt-1 pb-2 bg-white dark:bg-black text-black text-[1rem]">
+            what I do
+        </div>
+        <div class="max-w-5xl mx-auto">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-3 sm:gap-5 not-prose">
+                <a href="mailto:gabcas7@gmail.com?subject=Website: Freelance Inquiry" target="_blank" rel="noopener noreferrer"
+                    class="relative flex flex-col items-start justify-between p-6 overflow-hidden rounded-xl border border-gray-200 dark:border-gray-800 dark:bg-black bg-white group">
+                    <span class="absolute w-full h-full bg-white dark:bg-black inset-0 dark:group-hover:bg-gray-900 group-hover:bg-gray-50 group-hover:bg-opacity-30"></span>
+                    <div class="flex items-center justify-between w-full mb-4 ">
+                        <img src=".\img\freelance.png" alt="Freelance" class="relative h-5 md:h-14">
+                        <span class="opacity-0 -translate-x-2 flex-shrink-0 group-hover:translate-x-0 py-1 px-2.5 text-[0.6rem] group-hover:opacity-100 transition-all ease-out duration-200 rounded-full bg-blue-50 dark:bg-blue-500 dark:text-purple-300 text-violet-950 flex items-center justify-center">
+                            <span>Get in touch.</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            class="w-3 translate-x-0.5 h-3">
+                            <path fill-rule="evenodd"
+                                d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        </span>
+                    </div>
+                    <div x-data="{ open: false }">
+                        <button @mouseover="open = true" @click="open = ! open"><span class="relative text-xs md:text-sm text-violet-950 dark:text-purple-300">Having done freelance work...</span>
+                        </button>
+                        <!--content-->
+                        <span x-cloak x-show="open" @click.outside="open = false"
+                            x-transition:enter="transition ease-out duration-500"
+                            x-transition:enter-start="opacity-0 scale-90"
+                            x-transition:enter-end="opacity-100 scale-100"
+                            x-transition:leave="transition ease-in duration-500"
+                            x-transition:leave-start="opacity-100 scale-100"
+                            x-transition:leave-end="opacity-0 scale-90"
+                        >
+                            <span class="relative text-xs md:text-sm text-gray-600 dark:text-gray-400">in cybersecurity, web development, consulting, risk assessment and policy writing with various organizations including the United Nations, I am always excited to have a chat with potential clients with interesting projects.</span>
+                    </span>
+                        <!--end of paragraph-->
+                    </div>
+                </a>
+                <a href="mailto:gabcas7@gmail.com?subject=Website: Web Development Inquiry" target="_blank" rel="noopener noreferrer"
+                    class="relative flex flex-col items-start justify-between p-6 overflow-hidden rounded-xl border border-gray-200 dark:border-gray-800 dark:bg-black bg-white group">
+                    <span class="absolute w-full h-full bg-white dark:bg-black inset-0 dark:group-hover:bg-gray-900 group-hover:bg-gray-50 group-hover:bg-opacity-30"></span>
+                    <div class="flex items-center justify-between w-full mb-4 ">
+                        <img src=".\img\webDev.png" alt="Web Development" class="relative h-5 md:h-14">
+                        <span class="opacity-0 -translate-x-2 flex-shrink-0 group-hover:translate-x-0 py-1 px-2.5 text-[0.6rem] group-hover:opacity-100 transition-all ease-out duration-200 rounded-full bg-blue-50 dark:bg-blue-500 dark:text-purple-300 text-violet-950 flex items-center justify-center">
+                            <span>Get a quote.</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            class="w-3 translate-x-0.5 h-3">
+                            <path fill-rule="evenodd"
+                                d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        </span>
+                    </div>
+                    <div x-data="{ open: false }">
+                        <button @mouseover="open = true" @click="open = ! open"><span class="relative text-xs md:text-sm text-violet-950 dark:text-purple-300">As a full-stack web developer...</span>
+                        </button>
+                        <!--content-->
+                        <span x-cloak x-show="open" @click.outside="open = false"
+                            x-transition:enter="transition ease-out duration-500"
+                            x-transition:enter-start="opacity-0 scale-90"
+                            x-transition:enter-end="opacity-100 scale-100"
+                            x-transition:leave="transition ease-in duration-500"
+                            x-transition:leave-start="opacity-100 scale-100"
+                            x-transition:leave-end="opacity-0 scale-90"
+                        >
+                            <span class="relative text-xs md:text-sm text-gray-600 dark:text-gray-400">with over 3 years of work experience my focus is to understand the root of the problem you wish to solve with your website, and ensure you understand how to manage your online assets.</span>
+                        </span>
+                        <!--end of paragraph-->
+                    </div>
+                </a>
+                <a href="https://soundcloud.com/sstelo" target="_blank" rel="noopener noreferrer"
+                    class="relative flex flex-col items-start justify-between p-6 overflow-hidden rounded-xl border border-gray-200 dark:border-gray-800 dark:bg-black bg-white group">
+                    <span class="absolute w-full h-full bg-white dark:bg-black inset-0 dark:group-hover:bg-gray-900 group-hover:bg-gray-50 group-hover:bg-opacity-30"></span>
+                    <div class="flex items-center justify-between w-full mb-4 ">
+                        <img src=".\img\sound.png" alt="Sound Design and Composition" class="relative h-5 md:h-14">
+                        <span class="opacity-0 -translate-x-2 flex-shrink-0 group-hover:translate-x-0 py-1 px-2.5 text-[0.6rem] group-hover:opacity-100 transition-all ease-out duration-200 rounded-full bg-blue-50 dark:bg-blue-500 dark:text-purple-300 text-violet-950 flex items-center justify-center">
+                            <span>Check out some music!</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            class="w-3 translate-x-0.5 h-3">
+                            <path fill-rule="evenodd"
+                                d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        </span>
+                    </div>
+                    <div x-data="{ open: false }">
+                        <button @mouseover="open = true" @click="open = ! open"><span class="relative text-xs md:text-sm text-violet-950 dark:text-purple-300">As a musician...</span>
+                        </button>
+                        <!--content-->
+                        <span x-cloak x-show="open" @click.outside="open = false"
+                            x-transition:enter="transition ease-out duration-500"
+                            x-transition:enter-start="opacity-0 scale-90"
+                            x-transition:enter-end="opacity-100 scale-100"
+                            x-transition:leave="transition ease-in duration-500"
+                            x-transition:leave-start="opacity-100 scale-100"
+                            x-transition:leave-end="opacity-0 scale-90"
+                        >
+                            <span class="relative text-xs md:text-sm text-gray-600 dark:text-gray-400">and the holder of a Bachelor's of Computer Science with a minor in Electroacoustic Studies, I have a passion for pushing digital signal processing to its absolute limits while composing thought provoking electronic music.</span>
+                        </span>
+                        <!--end of paragraph-->
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--"Resume" section-->
+
+    <!--"Profile" section-->
+    <div class="items-center max-w-screen-xl px-4 py-8 mx-auto lg:grid lg:grid-cols-4 lg:gap-16 xl:gap-24 lg:py-24 lg:px-6">
+        <div class="col-span-2 mb-8">
+            <p class="text-lg font-medium text-violet-950 dark:text-purple-300">Over 3 years of professional experience.</p>
+            <h2 class="mt-3 mb-4 text-3xl font-extrabold tracking-tight text-gray-900 md:text-3xl dark:text-white">MY PROFILE</h2>
+            <ul class="text-sm font-medium max-w-md space-y-1.5 text-gray-500 list-disc list-outside dark:text-gray-400">
+                <li>
+                    Bachelor's Degree in Computer Science with a minor in Electroacoustic Studies - Concordia University - 2022
+                </li>
+                <li>
+                    Over 3 years of experience as a Freelance Consultant and Full-Stack Web Developer
+                </li>
+                <li>
+                    Fluent in English, French and Spanish
+                </li>
+                <li>
+                    Technical skills: Cybersecurity Penetration Testing Methodologies, Programming, Web Design, Documentation, Data Analysis, Digital Signal Processing, knowledge of various Software Development Lifecycle Methodologies
+                </li>
+                <li>
+                    Soft skills: Self-Driven, Adaptability, Time-Management, Creative Problem Solver, Attention to Detail, Good Team-worker, Good Facilitator, Desire to learn new skills
+                </li>
+            </ul>            
+            <p class="font-light text-gray-500 dark:text-gray-400"><br/>If you have any questions or comments, feel free to get in touch with me.</p>
+            <div class="pt-6 mt-6 space-y-4 border-t border-gray-200 dark:border-gray-700">
+                <div>
+                    <a href="mailto:gabcas7@gmail.com?subject=Website: Resume Inquiry" target="_blank" rel="noopener noreferrer"
+                        class="inline-flex items-center text-base font-medium text-violet-950 hover:text-purple-300 dark:text-purple-300 dark:hover:text-purple-300">
+                        Send me an email
+                        <svg class="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--"Education, work, projects, skills" section-->
+        <div class="col-span-2 space-y-8 md:grid md:grid-cols-2 md:gap-12 md:space-y-0">
+            <div>
+                <svg class="md:w-12 md:h-12" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5b21b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="14 2 18 6 7 17 3 17 3 13 14 2"></polygon><line x1="3" y1="22" x2="21" y2="22"></line></svg>
+                <div x-data="{ open: false }">
+                    <button @mouseover="open = true" @click="open = ! open"><h3 class="mb-2 text-2xl font-bold dark:text-white">EDUCATION</h3></button>
+                    <!--content-->
+                    <div x-cloak x-show="open" @click.outside="open = false"
+                        x-transition:enter="transition ease-out duration-500"
+                        x-transition:enter-start="opacity-0 scale-90"
+                        x-transition:enter-end="opacity-100 scale-100"
+                        x-transition:leave="transition ease-in duration-500"
+                        x-transition:leave-start="opacity-100 scale-100"
+                        x-transition:leave-end="opacity-0 scale-90"
+                    >
+                        <ul class="list-outside list-disc text-violet-950 dark:text-purple-300"><li><strong>Bachelor's of Computer Science in Computer Applications with minor in Electroacoustic Studies</strong></li></ul>
+                        <p class="text-sm">Concordia University, Montreal, Quebec, 2022</p>
+                        <p class="text-xs text-gray-500 dark:text-gray-400"><em>Two time recipient of the 'Bourses d'excellence en sciences de l'informatique, en génie informatique et de la construction des ordinateurs et en génie électrique, électronique et des communications' bursary</em></p>
+                        <br/>
+                        <ul class="list-outside list-disc text-violet-950 dark:text-purple-300"><li><strong>DEC in Social Sciences & Mathematics</strong></li></ul>
+                        <p class="text-sm">John Abbott College, Sainte-Anne-de-Bellevue, Montreal, Quebec, 2018</p>
+                        <p class="text-xs text-gray-500 dark:text-gray-400"><em>Recipient of the Certificate in Women's Studies and Gender Relations.</em></p>
+                        <p class="text-xs text-gray-500 dark:text-gray-400"><em>Recipient of the Certificate highlighting excellence in mathematics (top 5%).</em></p>
+                    </div>
+                    <!--end of paragraph-->
+                </div>
+            </div>
+            <div>
+                <svg class="md:w-12 md:h-12" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5b21b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                <div x-data="{ open: false }">
+                    <button @mouseover="open = true" @click="open = ! open"><h3 class="mb-2 text-2xl font-bold dark:text-white">WORK EXPERIENCE</h3></button>
+                    <!--content-->
+                    <div class="text-sm" x-cloak x-show="open" @click.outside="open = false"
+                        x-transition:enter="transition ease-out duration-500"
+                        x-transition:enter-start="opacity-0 scale-90"
+                        x-transition:enter-end="opacity-100 scale-100"
+                        x-transition:leave="transition ease-in duration-500"
+                        x-transition:leave-start="opacity-100 scale-100"
+                        x-transition:leave-end="opacity-0 scale-90"
+                    >
+                        <ul class="list-outside list-disc text-violet-950 dark:text-purple-300"><li><strong>Freelance Webmaster</strong></li></ul>
+                        <p class="text-sm"><em>Neon Events Inc. + Partners, Montreal</em><br/>May/2023 to Present</p><br/>
+
+                        <ul class="list-outside list-disc text-violet-950 dark:text-purple-300"><li><strong>Independent Cybersecurity Researcher</strong></li></ul>
+                        <p class="text-sm"><em>N/A, Montreal</em><br/>July/2022 to Present</p><br/>
+
+                        <ul class="list-outside list-disc text-violet-950 dark:text-purple-300"><li><strong>Resident Consultant</strong></li></ul>
+                        <p class="text-sm"><em>District 3 Innovation Hub, Montreal</em><br/>May/2023 to August/2023</p><br/>
+
+                        <ul class="list-outside list-disc text-violet-950 dark:text-purple-300"><li><strong>Freelance Full-Stack Web Developer and Consultant</strong></li></ul>
+                        <p class="text-sm"><em>Yiara Magazine, Montreal</em><br/>January/2022 to December/2022</p><br/>
+
+                        <ul class="list-outside list-disc text-violet-950 dark:text-purple-300"><li><strong>Freelance Full-Stack Web Developer and Consultant</strong></li></ul>
+                        <p class="text-sm"><em>Léa Denieul PhD at Concordia University, Montreal</em><br/>January/2022 to December/2022</p><br/>
+
+                        <ul class="list-outside list-disc text-violet-950 dark:text-purple-300"><li><strong>Website Developer and Web Content Manager</strong></li></ul>
+                        <p class="text-sm"><em>Fine Arts Stories (Concordia University), Montreal</em><br/>January/2020 to December/2022</p><br/>
+
+                        <ul class="list-outside list-disc text-violet-950 dark:text-purple-300"><li><strong>Freelance Full-Stack Web Developer and Consultant</strong></li></ul>
+                        <p class="text-sm"><em>Concordia Fine Arts Student Alliance, Montreal</em><br/>January/2021 to December/2021</p><br/>
+
+                        <ul class="list-outside list-disc text-violet-950 dark:text-purple-300"><li><strong>Freelance Cyber Security and Privacy Consultant</strong></li></ul>
+                        <p class="text-sm"><em>Concordia Fine Arts Student Alliance, Montreal</em><br/>January/2020 to January/2021</p><br/>
+
+                        <ul class="list-outside list-disc text-violet-950 dark:text-purple-300"><li><strong>Freelance Full-Stack Web Developer and Consultant</strong></li></ul>
+                        <p class="text-sm"><em>Tricia Middleton, Montreal</em><br/>December/2020 to February/2021</p><br/>
+
+                        <ul class="list-outside list-disc text-violet-950 dark:text-purple-300"><li><strong>Backend Developer</strong></li></ul>
+                        <p class="text-sm"><em>Joyn, Montreal</em><br/>January/2019 to December/2020</p><br/>
+                    </div>
+                    <!--end of paragraph-->
+                </div>
+            </div>
+            <div>
+                <svg class="md:w-12 md:h-12" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5b21b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/><path d="M14 3v5h5M16 13H8M16 17H8M10 9H8"/></svg>
+                <div x-data="{ open: false }">
+                    <button @mouseover="open = true" @click="open = ! open"><h3 class="mb-2 text-2xl font-bold dark:text-white">ACADEMIC PROJECTS</h3></button>
+                    <!--content-->
+                    <div x-cloak x-show="open" @click.outside="open = false"
+                        x-transition:enter="transition ease-out duration-500"
+                        x-transition:enter-start="opacity-0 scale-90"
+                        x-transition:enter-end="opacity-100 scale-100"
+                        x-transition:leave="transition ease-in duration-500"
+                        x-transition:leave-start="opacity-100 scale-100"
+                        x-transition:leave-end="opacity-0 scale-90"
+                    >
+                        <ul class="text-sm list-outside list-disc text-violet-950 dark:text-purple-300">
+                            <li><a class="hover:text-purple-300 dark:hover:text-violet-950" href="https://github.com/rilling/OpenTracksConcordia" target="_blank" rel="noopener noreferrer"><strong>OpenTracks Concordia</strong></a></li>
+                            <li><strong>Image Processing and Computer Vision Project</strong></li>
+                            <li><strong>Academic Advisor Chatbot</strong></li>
+                            <li><strong>3D Procedurally Generated Virtual Environments</strong></li>
+                            <li><a class="hover:text-purple-300 dark:hover:text-violet-950" href="https://github.com/WaelLoop/Parkr" target="_blank" rel="noopener noreferrer"><strong>Parkr: Smart City Parking System</strong></a></li>
+                        </ul>
+                    </div>
+                    <!--end of paragraph-->
+                </div>
+            </div>
+            <div>
+                <svg class="md:w-12 md:h-12" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5b21b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+                <div x-data="{ open: false }">
+                    <button @mouseover="open = true" @click="open = ! open"><h3 class="mb-2 text-2xl font-bold dark:text-white">TECHNICAL SKILLS</h3></button>
+                    <!--content-->
+                    <div x-cloak x-show="open" @click.outside="open = false"
+                        x-transition:enter="transition ease-out duration-500"
+                        x-transition:enter-start="opacity-0 scale-90"
+                        x-transition:enter-end="opacity-100 scale-100"
+                        x-transition:leave="transition ease-in duration-500"
+                        x-transition:leave-start="opacity-100 scale-100"
+                        x-transition:leave-end="opacity-0 scale-90"
+                    >
+                        <ul class="list-outside list-disc">
+                            <li class="text-sm"><strong class="text-violet-950 dark:text-purple-300">Programming:</strong> Java, C#, C, C++, Python, HTML, CSS, JavaScript, Assembly Language, Prolog, Clisp, Ruby, AspectJ, OpenGL, Freepascal, Prolog, Bash, PowerShell, YAML, MATLAB/Octave</li>
+                            <li class="text-sm"><strong class="text-violet-950 dark:text-purple-300">Web Development:</strong> ASP.NET, XML, JSON, Alpine.js, Tailwind CSS, jQuery, D3.js, Jinja2, Flask, Angular, TypeScript, Node.js, React.Js, Bootstrap, AWS, Cargo, Squarespace, Wix, WordPress</li>
+                            <li class="text-sm"><strong class="text-violet-950 dark:text-purple-300">Development Tools:</strong> Visual Studio Community and Code, Electron, Codux, Delphi, Godot, Android Studio, Eclipse, Intellij, Git, UML, Docker, VirtualBox, PyTorch, OpenGL, MAX/MSP</li>
+                            <li class="text-sm"><strong class="text-violet-950 dark:text-purple-300">Databases:</strong> PostgreSQL, Apache Jena Fuseki, SPARQL</li>
+                            <li class="text-sm"><strong class="text-violet-950 dark:text-purple-300">Operation Systems:</strong> Linux OS (Ubuntu, Debian, Kali, Parrot, Arch), Microsoft Windows, Apple macOS</li>
+                            <li class="text-sm"><strong class="text-violet-950 dark:text-purple-300">Office Software:</strong> Microsoft Office, OpenOffice, Google Office Suite, Google Workspace</li>
+                        </ul>
+                    </div>
+                    <!--end of paragraph-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer section-->
+    <footer class="flex justify-between items-center bg-white text-violet-950 dark:text-purple-300 py-4 px-6">
+        <div class="text-sm"><strong>Thank you for your time.</strong></div>
+        <div x-data="{ open: false }" @mouseover.away = "open = false">
+            <button class="text-sm" @mouseover="open = true" @click="open = ! open"><em>Need a break?</em></button>
+    
+            <div x-cloak x-show="open" @click.outside="open = false">
+                <a href="https://casyellow.github.io/snake/" target="_blank" rel="noopener noreferrer" class="text-sm font-light text-gray-500 dark:text-gray-400">Play some snake...</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
